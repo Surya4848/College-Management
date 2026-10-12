@@ -1,0 +1,38 @@
+.attendance-page .inner-title-row { margin-bottom: 15px; }
+.attendance-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-bottom: 13px; }
+.attendance-summary section { min-height: 64px; display: flex; align-items: center; gap: 10px; padding: 10px 13px; border: 1px solid #deebf5; border-radius: 6px; background: #fff; box-shadow: var(--shadow); }
+.attendance-summary-mark { width: 31px; height: 31px; display: grid; place-items: center; flex: none; border-radius: 6px; }
+.mark-present { background: #e7f7ef; color: #168b5c; }
+.mark-absent { background: #fff0ee; color: #c7584d; }
+.mark-unmarked { background: #eef4f8; color: #68839d; }
+.attendance-summary section div { display: flex; flex-direction: column; gap: 2px; }
+.attendance-summary strong { color: #1c3e60; font-family: Manrope, sans-serif; font-size: 16px; }
+.attendance-summary small { color: #738ba3; font-size: 8px; }
+.attendance-panel { overflow: hidden; }
+.attendance-toolbar { min-height: 59px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 15px; border-bottom: 1px solid #edf3f8; }
+.attendance-search { width: min(320px, 100%); height: 32px; display: flex; align-items: center; gap: 8px; padding: 0 9px; border: 1px solid #dce8f2; border-radius: 4px; color: #6985a0; }
+.attendance-search input { width: 100%; min-width: 0; border: 0; outline: 0; color: #294a6d; font-size: 9px; }
+.attendance-filters { display: flex; gap: 10px; }
+.attendance-filters label { display: flex; align-items: center; gap: 6px; color: #6d87a0; font-size: 8px; }
+.attendance-filters input,.attendance-filters select { height: 30px; padding: 0 7px; border: 1px solid #dce8f2; border-radius: 4px; background: #fff; color: #365878; font: inherit; font-size: 9px; }
+.attendance-action-row { min-height: 41px; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0 15px; border-bottom: 1px solid #edf3f8; color: #718ba5; font-size: 9px; }
+.attendance-action-row > div { display: flex; gap: 8px; }
+.attendance-action-row button { display: inline-flex; align-items: center; gap: 4px; padding: 5px 0; border: 0; background: none; color: #176db7; font-size: 8px; }
+.attendance-table { min-width: 620px; }
+.attendance-table th { height: 34px; }
+.attendance-table td { height: 51px; }
+.attendance-student { display: flex; flex-direction: column; gap: 3px; }
+.attendance-student strong { color: #294a6d; font-size: 10px; }
+.attendance-student small { color: #8096aa; font-size: 8px; }
+.attendance-status-actions { display: flex; align-items: center; gap: 6px; }
+.attendance-status-actions button { display: inline-flex; align-items: center; gap: 3px; padding: 5px 7px; border: 1px solid #dce8f2; border-radius: 4px; background: #fff; color: #627e99; font-size: 8px; }
+.attendance-status-actions button.status-selected.status-present { border-color: #a8dec1; background: #eaf8f0; color: #168258; }
+.attendance-status-actions button.status-selected.status-absent { border-color: #f0c1ba; background: #fff0ee; color: #bf584d; }
+.attendance-current { margin-left: 4px; color: #8398ac; font-size: 8px; }
+.attendance-current.current-present { color: #168258; }
+.attendance-current.current-absent { color: #bf584d; }
+.attendance-empty { height: 75px !important; color: #718ba5 !important; text-align: center; }
+.attendance-footer { min-height: 39px; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0 15px; border-top: 1px solid #edf3f8; color: #7890a8; font-size: 8px; }
+.attendance-saved-note { display: flex; align-items: center; gap: 6px; margin: 10px 0 0; color: #16855a; font-size: 9px; }
+@media (max-width: 650px) { .attendance-toolbar { align-items: stretch; flex-direction: column; padding: 10px; } .attendance-search { width: 100%; } .attendance-filters { justify-content: space-between; } }
+@media (max-width: 560px) { .attendance-summary { gap: 6px; } .attendance-summary section { align-items: flex-start; flex-direction: column; gap: 5px; padding: 9px; } .attendance-summary strong { font-size: 13px; } .attendance-summary small { font-size: 7px; } .attendance-filters { flex-wrap: wrap; } }
